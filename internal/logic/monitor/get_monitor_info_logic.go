@@ -63,7 +63,7 @@ func (l *GetMonitorInfoLogic) GetMonitorInfo(in *palworldmonitor.Empty) (*palwor
 		MemUsed:    memory.Used / MB,
 		MemTotal:   memory.Total / MB,
 		MemPercent: float32(Round(memory.UsedPercent, 2)),
-		CpuPercent: float32(Round(percent[0], 2)),
+		CpuPercent: float32(Round(percent[0], 0)),
 		BootTime:   GetHourDiffer(cachedBootTime.Format("2006-01-02 15:04:05"), time.Now().Format("2006-01-02 15:04:05")),
 		NetIn:      float32(Round(float64(netInSpeed/KB), 2)),
 		NetOut:     float32(Round(float64(netOutSpeed/KB), 2)),
