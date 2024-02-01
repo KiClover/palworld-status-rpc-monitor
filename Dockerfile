@@ -5,7 +5,7 @@ ARG PROJECT=palworldmonitor
 # Define the config file name | 定义配置文件名
 ARG CONFIG_FILE=palworldmonitor.yaml
 # Define the author | 定义作者
-ARG AUTHOR="example@example.com"
+ARG AUTHOR="kiclover@email.cn"
 
 LABEL org.opencontainers.image.authors=${AUTHOR}
 
