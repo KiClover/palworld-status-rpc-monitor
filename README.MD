@@ -6,6 +6,11 @@
 [![Go-Zero](https://img.shields.io/badge/Go--Zero-v1.6.0-brightgreen.svg)](https://go-zero.dev/)
 [![License](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/go-admin-team/go-admin)
 
+[前端](https://github.com/KiClover/palworld-status-ui)
+
+[资源监控(后端)](https://github.com/KiClover/palworld-status-rpc-monitor)
+
+[服务器监控(后端)](https://github.com/KiClover/palworld-status-rpc-server)
 ## 简介
 优雅的PalWorld服务器监控系统
 
@@ -24,6 +29,22 @@
 
 
 ## 开始使用
+### 前端页面 StatusUI
+> 不建议把前端和游戏服务器放在同一台部署
+
+更新依赖
+```bash
+pnpm i
+```
+运行
+```bash
+pnpm dev
+```
+编译
+```bash
+pnpm build
+```
+
 ### 服务器本体资源监控 MonitorStatus
 
 >该服务请置于运行PalWorldServerServer(幻兽帕鲁服务器)的服务器上运行
@@ -36,3 +57,5 @@ go mod tidy
 ```bash
 go run palworldmonitor.go -f etc/palworldmonitor.yaml
 ```
+
+
